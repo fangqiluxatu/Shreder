@@ -22,6 +22,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
+import ctypes
+libgcc_s = ctypes.CDLL('libgcc_s.so.1')
 import paramiko
 import threading
 from time import sleep as ssh_delay
